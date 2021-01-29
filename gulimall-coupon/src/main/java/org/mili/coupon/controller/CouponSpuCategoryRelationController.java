@@ -3,6 +3,8 @@ package org.mili.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import org.mili.coupon.entity.CouponSpuCategoryRelationEntity;
+import org.mili.coupon.service.CouponSpuCategoryRelationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import org.mili.coupon.entity.CouponSpuCategoryRelationEntity;
-import org.mili.coupon.service.CouponSpuCategoryRelationService;
 import org.mili.common.utils.PageUtils;
 import org.mili.common.utils.R;
 
