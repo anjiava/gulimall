@@ -76,6 +76,10 @@ public class CategoryController {
 
         return R.ok();
     }
+    @RequestMapping("/update/batch")
+    public R batchUpdate(@RequestBody List<CategoryEntity> categoryEntities){
+        return categoryService.updateBatchById(categoryEntities) ? R.ok():R.error();
+    }
 
     /**
      * 删除
